@@ -2,12 +2,11 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 
 def substrings(string, inputArray)
   outputArray = []
-  for stringWord in string.split
-    for dictionaryWord in inputArray
-      outputArray << dictionaryWord if stringWord.include?(dictionaryWord) && outputArray.none?(dictionaryWord)
-    end
+  for dictionaryWord in inputArray
+    outputArray << dictionaryWord if string.downcase.include?(dictionaryWord.downcase) && outputArray.none?(dictionaryWord)
   end
   return outputArray
 end
 
+puts substrings("Below", dictionary)
 puts substrings("Howdy partner, sit down! How's it going?", dictionary)

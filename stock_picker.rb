@@ -12,7 +12,7 @@ def stock_picker (array)
     end
     profit = result[:sell_price] - result[:buy_price]
   }
-  puts result
+  return [result[:buy_index], result[:sell_index]]
 end
 
-stock_picker([17,3,6,9,15,8,6,1,10])
+puts stock_picker([17,3,6,9,15,8,6,1,10])

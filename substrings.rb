@@ -7,7 +7,7 @@ def substrings(string, inputArray)
       outputArray << dictionaryWord if stringWord.include?(dictionaryWord) && outputArray.none?(dictionaryWord)
     end
   end
-  outputArray
+  return outputArray
 end
 
 puts substrings("Howdy partner, sit down! How's it going?", dictionary)

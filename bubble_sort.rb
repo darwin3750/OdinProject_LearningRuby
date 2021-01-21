@@ -7,7 +7,7 @@ def bubble_sort(array)
       break if index2 + 1 >= array.length - 1
     }
   }
-  puts array 
+  return array 
 end
 
-bubble_sort([4,3,78,2,0,2])
+print bubble_sort([4,3,78,2,0,2])
